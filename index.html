@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FA -->
+  <script src="https://kit.fontawesome.com/8f861d31b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <img src="css/images/logo.svg" alt="logo">
+  <div class="mainContainer row col-lg-9 col-md-10 col-sm-10 col-10">
+    <div class="billContainer col-lg-6 col-md-6">
+      <p>Bill</p>
+      <input type="text" class="parameterInput" id="bill" placeholder="0"> <br>
+      <p class="selectTip">Select Tip %</p>
+      <div class="tipBtns">
+        <button class="Btn" id="5">5%</button>
+        <button class="Btn" id="10">10%</button>
+        <button class="Btn" id="15">15%</button>
+        <button class="Btn" id="25">25%</button>
+        <button class="Btn" id="30">50%</button>
+        <button class="custom">Custom</button>
+        <input type="text" class="parameterInput" id="customEntry" placeholder="0">
+      </div>
+      <p class="nop">Number of People <span class="cbz">Can't be Zero</span></p>
+      <input type="text" class="parameterInput" id="numOfPeople" placeholder="0">
+    </div>
+    <div class="resultContainer col-lg-6 col-md-6">
+      <div class="results">
+        <label for="tipPerPerson" class="resultsLabel">Tip Amount <br><span class="personSpn">/ person</span></label>
+        <input type="text" class="resultField" id="tipPerPerson" class="resultOutput" disabled>
+        <label for="totalTip" class="resultsLabel">Total <br><span class="personSpn">/ person</span></label>
+        <input type="text" class="resultField" id="totalTip" class="resultOutput" disabled>
+      </div>
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Challenge by : <a href="https://www.frontendmentor.io/">Frontend Mentor</a> Code by: Himanshu Udupi</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
